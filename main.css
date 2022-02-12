@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  /* border:  3px solid red; */
+  height: 50px;
+  color: blue;
+}
+.board {
+  /* border:  3px solid red; */
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+.tile {
+  color: blue;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-border {
+  border-right: 5px solid blue;
+}
+.bottom-border {
+  border-bottom: 5px solid blue;
+}
+#game-over-alart {
+  border: 5px solid rgb(255, 0, 212);
+  margin-top: 100px;
+  width: 300px;
+  height: 170px;
+  text-align: center;
+}
+.which-player-win {
+  margin-top: 30px;
+  font-size: 2em;
+  color: blue;
+}
+.play-again {
+  margin-top: 20px;
+  color: rgb(255, 47, 82);
+  border-color: blue;
+  border-radius: 5px;
+  font-size: 1em;
+}
+/* .hidden{
+    display: none;
+} */
+.visible {
+  display: block;
+}
