@@ -50,9 +50,3 @@ h1 {
   border-radius: 5px;
   font-size: 1em;
 }
-/* .hidden{
-    display: none;
-} */
-.visible {
-  display: block;
-}

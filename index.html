@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tic tac toe</title>
-    <link rel="stylesheet" href="main.css">
-
-</head>
-<body>
-    <h1> Tic Tac Toe </h1>
-    <div class="board">
-        <div data-index="1" class="tile right-border bottom-border" id="tile-1"></div>
-        <div class="tile right-border bottom-border" id="tile-2"></div>
-        <div class="tile bottom-border"              id="tile-3"></div>
-        <div class="tile right-border bottom-border" id="tile-4"></div>
-        <div class="tile right-border bottom-border" id="tile-5"></div>
-        <div class="tile bottom-border"              id="tile-6"></div>
-        <div class="tile right-border "              id="tile-7"></div>
-        <div class="tile right-border "              id="tile-8"></div>
-        <div class="tile"                            id="tile-9"></div>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <div class="board" id="boardId">
+      <div class="tile right-border bottom-border" id="tile-1"></div>
+      <div class="tile right-border bottom-border" id="tile-2"></div>
+      <div class="tile bottom-border" id="tile-3"></div>
+      <div class="tile right-border bottom-border" id="tile-4"></div>
+      <div class="tile right-border bottom-border" id="tile-5"></div>
+      <div class="tile bottom-border" id="tile-6"></div>
+      <div class="tile right-border" id="tile-7"></div>
+      <div class="tile right-border" id="tile-8"></div>
+      <div class="tile" id="tile-9"></div>
     </div>
     <div id="game-over-alart" class="hidden">
-        <h2 id="which-player-win"> </h2>
-        <button id="play-again">Play Again</button>
+      <h2 id="which-player-win"></h2>
+      <button id="play-again">Play Again</button>
     </div>
-      
 
-    <script src="main.js"></script> 
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
