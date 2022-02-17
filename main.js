@@ -58,7 +58,7 @@ function getEntry(player) {
 }
 
 
-var tileElements = document.getElementsByClassName('tile');
+let tileElements = document.getElementsByClassName('tile');
 for (var i = 0; i < tileElements.length; i++) {
     tileElements[i].addEventListener('click', function () {
         if (finished==false) {
@@ -85,8 +85,14 @@ for (var i = 0; i < tileElements.length; i++) {
         }
     });
 }
-if()
-function resetboard(){  
-    document.getElementById("boardId").reset();  
-  } 
+let alertWin = document.getElementById(`which-player-win`);
+let palyAgain=document.getElementById('play_again');
+    palyAgain.addEventListener('click', () => {
+        for (let i = 0; i < tileElements.length; i++) {
+        tileElements[i].innerHTML=''
+        alertWin.innerHTML=''
+          }
+          finished=false;
+        });
+       
   
