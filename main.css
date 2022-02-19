@@ -10,6 +10,12 @@ h1 {
   height: 50px;
   color: blue;
 }
+#main_board{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .board {
   /* border:  3px solid red; */
   display: grid;
@@ -50,11 +56,6 @@ h1 {
   border-radius: 5px;
   font-size: 1em;
 }
-#game_initial_view{
-  /* border: 5px solid blue; */
-  /* width: 300px; */
-  /* height: 370px; */
-}
 .start{
   width: 100px;
   height: 50px;
@@ -62,4 +63,7 @@ h1 {
 .scores{
   width: 100px;
   height: 50px;
+}
+#player_scores{
+  display: none;
 }

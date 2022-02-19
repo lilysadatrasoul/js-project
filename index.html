@@ -14,12 +14,13 @@
       <button id="start" class="start" >Start</button>
       <button id="scores" class="scores" >Scores</button>
     </div>
-    <div>
-      <label for="player_X">Player_O:</label>
-      <label id="player_X" ></label><br>
-      <label for="player_O">Player_X:</label>
-      <label id="player_O" ></label>     
+    <div id="player_scores">
+      <label >Player_X:</label>
+      <label id="player_X" >0</label><br>
+      <label >Player_O:</label>
+      <label id="player_O" >0</label>     
     </div>
+    <div id="main_board">
     <div class="board" id="boardId">
       <div class="tile right-border bottom-border" id="tile-1"></div>
       <div class="tile right-border bottom-border" id="tile-2"></div>
@@ -31,9 +32,10 @@
       <div class="tile right-border" id="tile-8"></div>
       <div class="tile" id="tile-9"></div>
     </div>
-    <div id="game-over-alart" class="hidden">
+    <div id="game-over-alart">
       <h2 id="which-player-win"></h2>
     </div>
+  </div>
     
    
 
