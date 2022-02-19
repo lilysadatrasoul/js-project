@@ -8,7 +8,18 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    
     <h1>Tic Tac Toe</h1>
+    <div id="game_initial_view">
+      <button id="start" class="start" >Start</button>
+      <button id="scores" class="scores" >Scores</button>
+    </div>
+    <div>
+      <label for="player_X">Player_O:</label>
+      <label id="player_X" ></label><br>
+      <label for="player_O">Player_X:</label>
+      <label id="player_O" ></label>     
+    </div>
     <div class="board" id="boardId">
       <div class="tile right-border bottom-border" id="tile-1"></div>
       <div class="tile right-border bottom-border" id="tile-2"></div>
@@ -22,8 +33,9 @@
     </div>
     <div id="game-over-alart" class="hidden">
       <h2 id="which-player-win"></h2>
-      <button id="play_again">Play Again</button>
     </div>
+    
+   
 
     <script src="main.js"></script>
   </body>

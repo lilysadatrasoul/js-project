@@ -57,7 +57,8 @@ function getEntry(player) {
     return false;
 }
 
-
+let LabX = document.querySelector('#player_X');
+console.log(LabX)
 let tileElements = document.getElementsByClassName('tile');
 for (var i = 0; i < tileElements.length; i++) {
     tileElements[i].addEventListener('click', function () {
@@ -68,6 +69,7 @@ for (var i = 0; i < tileElements.length; i++) {
                     if(getEntry(player_x)){
                         let alertWin = document.getElementById(`which-player-win`);
                         alertWin.innerHTML = "Winner is " + " " + player_x;
+                        Lab_X.innerHTML =+
                         finished = true;
                     }
                     turn = 1;
@@ -77,6 +79,7 @@ for (var i = 0; i < tileElements.length; i++) {
                     if(getEntry(player_o)){
                         let alertWin = document.getElementById(`which-player-win`);
                         alertWin.innerHTML = "Winner is " + " " + player_o;
+
                         finished = true;
                     }
                     turn = 0;
@@ -86,13 +89,14 @@ for (var i = 0; i < tileElements.length; i++) {
     });
 }
 let alertWin = document.getElementById(`which-player-win`);
-let palyAgain=document.getElementById('play_again');
-    palyAgain.addEventListener('click', () => {
+let start=document.getElementById('start');
+
+    start.addEventListener('click', () => {
         for (let i = 0; i < tileElements.length; i++) {
         tileElements[i].innerHTML=''
         alertWin.innerHTML=''
           }
           finished=false;
-        });
+     });
        
-  
+
